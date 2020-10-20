@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chi-Culator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
+    <div id="particles-js">
+      <div class="card">
+        <div class="table__container">
+          <div class="table__wrapper u-margin-bottom-medium">
+            <table class="table">
+              <thead>
+                <tr class="table__row--heading">
+                  <th>Customer No</th>
+                  <th>Arrival Time</th>
+                  <th>Service Time</th>
+                  <th>Time Service Begin</th>
+                  <th>Time Service Ends</th>
+                  <th>Time Customer Wait in Queue</th>
+                  <th>Time Customer Spends in System</th>
+                  <th>Idle Time of Service</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div style="display: flex;">
+            <div class="form__group wow fadeInLeftBig" style="flex-grow: 3" data-wow-delay=".4s">
+              <input
+                type="text"
+                class="form__input"
+                id="run"
+                placeholder="Simulation Run-Time"
+                required
+                style="width: 100%"
+              />
+              <label for="run" class="form__label">Simulation Run-Time</label>
+            </div>
+            <div class="table__btn">
+              <button class="btn btn__result calculate" data-wow-delay=".4s">Calculate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particlesjs-config.json", function() {
+        console.log("Loaded");
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animated", // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      });
+      wow.init();
+    </script>
+
+    <script src="js/check.js"></script>
+  </body>
+</html>

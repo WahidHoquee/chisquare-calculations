@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chi-Culator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
+    <div id="particles-js">
+      <div class="card">
+        <div class="book book--lightDark">
+          <div class="book__form">
+            <form action="" class="form">
+              <div class="u-margin-bottom-medium wow fadeInLeftBig" data-wow-delay=".1s">
+                <h1 class="heading heading--dark">
+                  Submit the Data!
+                </h1>
+              </div>
+              <div class="form__group wow fadeInLeftBig" data-wow-delay=".3s">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="chiObserved"
+                  placeholder="Chi-Square Value"
+                  required
+                  readonly
+                />
+                <label for="observed" class="form__label"
+                  >Chi-Square Value</label
+                >
+              </div>
+              <div class="form__group wow fadeInLeftBig" data-wow-delay=".5s">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="chiExpected"
+                  placeholder="Chi-Square Value[k-1][1-a]"
+                  required
+                />
+                <label for="expected" class="form__label"
+                  >Chi-Square Value[k-1][1-a]</label
+                >
+              </div>
+              <div class="form__group wow fadeInUpBig" data-wow-delay=".7s">
+                <button class="btn btn--white check">Check</button>
+              </div>
+            </form>
+          </div>
+          <div class="book__tbl">
+            <div class="ans">
+              <div class="ans__img wow bounceInDown" data-wow-delay="1s">
+                <svg class="ans__logo">
+                  <use xlink:href="icon/sprite.svg#icon-help"></use>
+                </svg>
+              </div>
+              <h1 class="heading heading--light heading--big wow fadeInRightBig" data-wow-delay=".5s">
+                Unrevealed
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particlesjs-config.json", function() {
+        console.log("Loaded");
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animated", // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      });
+      wow.init();
+    </script>
+
+    
+
+    <script src="js/check.js"></script>
+  </body>
+</html>

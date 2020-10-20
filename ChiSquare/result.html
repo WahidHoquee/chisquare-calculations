@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chi-Culator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
+    <div id="particles-js">
+      <div class="card">
+        <div class="book book--darkLight">
+          <div class="book__form">
+            <form action="" class="form">
+              <!-- <div class="u-margin-bottom-medium wow fadeInLeftBig" data-wow-delay=".1s">
+                <h1 class="heading heading--light">
+                  Submit the Data!
+                </h1>
+              </div> -->
+              <div class="form__group wow fadeInLeftBig" data-wow-delay=".3s">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="avgWait"
+                  placeholder="Arrival Time"
+                  required
+                />
+                <label for="observed" class="form__label">Average Wait</label>
+              </div>
+              <div class="form__group wow fadeInLeftBig" data-wow-delay=".4s">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="probWait"
+                  placeholder="Service Time"
+                  required
+                />
+                <label for="expected" class="form__label">Probability of Wait</label>
+              </div>
+              <!-- <div class="form__group wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".6s">
+                <button class="btn btn--green submit">Submit &rarr;</button>
+              </div> -->
+            </form>
+          </div>
+          <div class="book__form">
+            <form action="" class="form">
+              <!-- <div class="u-margin-bottom-medium wow fadeInLeftBig" data-wow-delay=".1s">
+                <h1 class="heading heading--light">
+                  Submit the Data!
+                </h1>
+              </div> -->
+              <div class="form__group wow fadeInLeftBig" data-wow-delay=".3s">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="probIdle"
+                  placeholder="Arrival Time"
+                  required
+                />
+                <label for="observed" class="form__label">Probability of Idle Server</label>
+              </div>
+              <div class="form__group wow fadeInLeftBig" data-wow-delay=".4s">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="avgService"
+                  placeholder="Average Service Time"
+                  required
+                />
+                <label for="expected" class="form__label">Average Service Time</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="form__group wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".6s">
+          <a class="btn btn--green submit" href="graph.html">Submit &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      particlesJS.load("particles-js", "particlesjs-config.json", function() {
+        console.log("Loaded");
+      });
+    </script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animated", // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      });
+      wow.init();
+    </script> -->
+    <script src="js/result.js"></script>
+  </body>
+</html>

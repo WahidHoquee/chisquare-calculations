@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chi-Culator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <div id="particles-js">
+      <div class="card">
+        <div class="table__container table__container--dark">
+            <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particlesjs-config.json", function() {
+        console.log("Loaded");
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animated", // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      });
+      wow.init();
+    </script>
+
+    <script src="js/graph.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chi-Culator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
+    <div id="particles-js">
+      <div class="card">
+        <div class="book book--darkLight">
+          <div class="book__form">
+            <form action="" class="form">
+              <div class="u-margin-bottom-medium wow fadeInLeftBig" data-wow-delay=".1s">
+                <h1 class="heading heading--light">
+                  Submit the Data!
+                </h1>
+              </div>
+              <div class="form__group wow fadeInLeftBig" data-wow-delay=".3s">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="observed"
+                  placeholder="Arrival Time"
+                  required
+                />
+                <label for="observed" class="form__label">Arrival Time</label>
+              </div>
+              <div class="form__group wow fadeInLeftBig" data-wow-delay=".3s">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="expected"
+                  placeholder="Service Time"
+                  required
+                />
+                <label for="observed" class="form__label">Service Time</label>
+              </div>
+
+             <div class="form__group wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".6s">
+                <button class="btn btn--green submit">Submit &rarr;</button>
+              </div>
+            </form>
+          </div>
+          <div class="book__tbl">
+            <div class="u-margin-bottom-extra-small wow fadeInDownBig" data-wow-delay=".2s">
+              <h1 class="heading heading--dark">
+                Table of Data
+              </h1>
+            </div>
+            <div class="book__tableScroll u-margin-bottom-small wow fadeInRightBig" data-wow-delay=".6s">
+              <table class="table">
+                <thead>
+                  <tr class="table__row--heading">
+                    <th>Customer No</th>
+                    <th>Arrival Time</th>
+                    <th>Service Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr class="table__row">
+                    <td>1</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td>2</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td>3</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td>4</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td>5</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td>6</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td>7</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td>8</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+            <a class="btn btn--white calculate wow fadeInUpBig" data-wow-delay=".4s" href="table.html">Calculate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particlesjs-config.json", function() {
+        console.log("Loaded");
+      });
+    </script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animated", // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      });
+      wow.init();
+    </script> -->
+    <script src="js/tabMenu.js"></script>
+  </body>
+</html>
